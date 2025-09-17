@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+
+  <div id="preloader">
+  <div class="loader-glow"></div>
+</div>
+
+ <!-- Navigation -->
+<nav class="navbar">
+  <a href="#" class="logo">PORT<span>FOLIO</span></a>
+
+  <!-- Hamburger button -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Nav Links -->
+  <div class="nav-links" id="nav-links">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#hobbies" class="nav-link">Hobbies</a>
+    <a href="#about-me" class="nav-link">About Me</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>HELLO! I'M WENCY</h1>
+          <h2>BSIT STUDENT</h2>
+          <p>
+            Hello! I’m <strong>Wency Rivera</strong>, an Information Technology student at
+            <strong>Batangas State University</strong>. I have a passion for technology,
+            problem-solving, and continuous learning. My interests include
+            <strong>web development, programming, and system design</strong>.
+            Through my projects, I aim to build practical solutions while improving
+            my skills as a future IT professional.
+          </p>
+          <div class="btn-group">
+            <a href="#skills" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> View Skills
+            </a>
+            <a href="#hobbies" class="btn">
+              <i class="fa-solid fa-paper-plane"></i> Hobbies
+            </a>
+            <a href="#about-me" class="btn">
+              <i class="fa-solid fa-user"></i> About Me
+            </a>
+            <a href="#contact" class="btn">
+              <i class="fa-solid fa-envelope"></i> Contact
+            </a>
+          </div>
+        </div>
+
+
+        <div class="profile-container">
+          <div class="profile-wrapper">
+            <img src="images/me.jpg" alt="Profile" class="profile-img" />
+            <div class="glow-effect"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <!-- HTML & CSS -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card" style="width: 18rem;">
+          <img src="images/html and css.webp" class="card-img-top" alt="HTML and CSS logo">
+          <div class="card-body">
+            <h5 class="card-title">HTML AND CSS</h5>
+            <p class="card-text">
+              I have learned the fundamentals of HTML and CSS, giving me the foundation to structure, style, and create my own simple web pages.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="card" style="width: 18rem;">
+          <img src="images/html and css.webp" class="card-img-top" alt="HTML and CSS logo">
+          <div class="card-body">
+            <h5 class="card-title">HTML AND CSS</h5>
+            <p class="card-text">
+              I have learned the fundamentals of HTML and CSS, giving me the foundation to structure, style, and create my own simple web pages.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C++ -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card" style="width: 18rem;">
+          <img src="images/c++.jpg" class="card-img-top" alt="C++ programming language logo">
+          <div class="card-body">
+            <h5 class="card-title">C++</h5>
+            <p class="card-text">
+              I studied C++ fundamentals such as variables, loops, functions, and object-oriented, develop logical, problem-solving programs.
+            </p>
+            <a href="https://www.codecademy.com/learn/learn-c-plus-plus" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="card" style="width: 18rem;">
+          <img src="images/c++.jpg" class="card-img-top" alt="C++ programming language logo">
+          <div class="card-body">
+            <h5 class="card-title">C++</h5>
+            <p class="card-text">
+              I studied C++ fundamentals such as variables, loops, functions, and object-oriented, develop logical, problem-solving programs.
+            </p>
+            <a href="https://www.codecademy.com/learn/learn-c-plus-plus" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHP -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card" style="width: 18rem;">
+          <img src="images/php.jpg" class="card-img-top" alt="PHP programming language logo">
+          <div class="card-body">
+            <h5 class="card-title">PHP</h5>
+            <p class="card-text">
+              I learned PHP including handling forms, variables, and loops, which allow me to create dynamic, data-driven websites.
+            </p>
+            <a href="https://www.codecademy.com/learn/paths/php-skill" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="card" style="width: 18rem;">
+          <img src="images/php.jpg" class="card-img-top" alt="PHP programming language logo">
+          <div class="card-body">
+            <h5 class="card-title">PHP</h5>
+            <p class="card-text">
+              I learned PHP including handling forms, variables, and loops, which allow me to create dynamic, data-driven websites.
+            </p>
+            <a href="https://www.codecademy.com/learn/paths/php-skill" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SQL -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card" style="width: 18rem;">
+          <img src="images/sql.jpg" class="card-img-top" alt="SQL database logo">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">
+              I gained knowledge of SQL basics like queries, joins, and commands, enabling me to manage and access databases efficiently.
+            </p>
+            <a href="https://www.codecademy.com/learn/learn-sql" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="card" style="width: 18rem;">
+          <img src="images/sql.jpg" class="card-img-top" alt="SQL database logo">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">
+              I gained knowledge of SQL basics like queries, joins, and commands, enabling me to manage and access databases efficiently.
+            </p>
+            <a href="https://www.codecademy.com/learn/learn-sql" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      
+<!-- Hobbies -->
+<section id="hobbies">
+  <h2>Hobbies</h2>
+  <div class="hobby-grid">
+
+    <!-- Hobby 1 -->
+    <div class="hobby-card">
+      <div class="video-container">
+        <video class="custom-video" playsinline>
+          <source src="video/anime.mp4" type="video/mp4">
+        </video>
+        <button class="play-btn">&#9658;</button>
+      </div>
+      <div class="card-body">
+        <h3>Watching Anime</h3>
+        <p>This will never gets old no matter what, watching anime become my routine in my life.</p>
+        <a href="https://www.crunchyroll.com/premium/?utm_source=google&utm_medium=paid_cr&utm_campaign=CR_SVOD_SEA_PH_goog_web_lf_Trademark&utm_term=crunchyroll&referrer=google_paid_cr_CR_SVOD_SEA_PH_goog_web_lf_Trademark&gad_source=1&gad_campaignid=21260461147&gbraid=0AAAAADmLVRbVhCiOV7Ijo6CSAQwTeRQrz&gclid=Cj0KCQjw8p7GBhCjARIsAEhghZ2eqNEWh6BRaIv9mHJarV_RGViacQtA3QlbUGDPZ1LwC6dCM4GI-ZMaAs94EALw_wcB" target="_blank" class="btn">View</a>
+      </div>
+    </div>
+
+    <!-- Hobby 2 -->
+    <div class="hobby-card">
+      <div class="video-container">
+        <video class="custom-video" playsinline>
+          <source src="video/music.mp4" type="video/mp4">
+        </video>
+        <button class="play-btn">&#9658;</button>
+      </div>
+      <div class="card-body">
+        <h3>Listening to Music</h3>
+        <p>This is my LIFE. I always listen to music when I have something to do.</p>
+        <a href="https://open.spotify.com/" target="_blank" class="btn">View</a>
+      </div>
+    </div>
+
+    <!-- Hobby 3 -->
+    <div class="hobby-card">
+      <div class="video-container">
+        <video class="custom-video" playsinline>
+          <source src="video/drawing.mp4" type="video/mp4">
+        </video>
+        <button class="play-btn">&#9658;</button>
+      </div>
+      <div class="card-body">
+        <h3>Drawing</h3>
+        <p>I used to sketch portrait and enjoy drawing sceneries whe i have my free time.</p>
+        <a href="https://youtu.be/TFT0Iakvg0A?si=6SO74idh7nJ3twa7" target="_blank" class="btn">View</a>
+      </div>
+    </div>
+
+    <!-- Hobby 4 -->
+    <div class="hobby-card">
+      <div class="video-container">
+        <video class="custom-video" playsinline>
+          <source src="video/ml.mp4" type="video/mp4">
+        </video>
+        <button class="play-btn">&#9658;</button>
+      </div>
+      <div class="card-body">
+        <h3>Playing ML</h3>
+        <p>I enjoy playing mobile games like Ml, CODM and COC, it's giving me peace sometimes.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.mobile.legends&hl=en" target="_blank" class="btn">View</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about-me">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <!-- Profile Image -->
+    <div class="about-image">
+      <img src="images/ako.jpg" alt="Profile Picture">
+    </div>
+
+    <!-- About Text -->
+    <div class="about-text">
+      <p>
+        Hello! I’m <strong>Wency Rivera</strong>, an aspiring 
+        <strong>IT Software Developer</strong>.  
+        I love building modern websites, learning new technologies, 
+        and continuously improving my skills in <strong>HTML, CSS, JS, PHP, SQL, and C++</strong>.
+      </p>
+      <p>
+        My goal is to create applications that are both functional 
+        and user-friendly, while keeping design simple yet engaging.
+      </p>
+
+      <!-- Button -->
+      <a href="files/Wency-CV.pdf" class="about-btn" download>📄 Download CV</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:wencyrivera325@gmail.com" target="_blank">wencyrivera325@gmail.com</a></p>
+    <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/share/19QhaSPo4u/" target="_blank">facebook.com/wency</a></p>
+    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Wency02" target="_blank">github.com/wency</a></p>
+    <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/nazakiii_?igsh=MWowZHdkeDV6cjVyaw==" target="_blank">instagram.com/nazakiii_</a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/wency-rivera-4b095737b/" target="_blank">linkedin.com/Wency Rivera</a></p>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Wency Rivera | My Portfolio</p>
+  </footer>
+</body>
+</html>
+
+
+  <!-- Link to JS file -->
+  <script src="main.js"></script>
