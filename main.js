@@ -96,21 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 100);
   }
 
-  /* ---------------- HAMBURGER MENU ---------------- */
-  const hamburger = document.getElementById("hamburger");
-  const navLinksContainer = document.getElementById("nav-links");
-
-  if (hamburger && navLinksContainer) {
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navLinksContainer.classList.toggle("show");
-    });
-
-    document.querySelectorAll(".nav-link").forEach((link) => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navLinksContainer.classList.remove("show");
-      });
-    });
-  }
+  
+   
 });
