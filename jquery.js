@@ -133,7 +133,7 @@ $(document).ready(function () {
         localStorage.setItem("loggedInUser", username);
 
         alert("Login successful! Welcome back, " + currentUser.fullname + "!");
-        window.location.href = "./../html/dashboard.html";
+        window.location.href = "./html/dashboard.html";
       } else {
         alert("User not registered or invalid username or password!");
       }
