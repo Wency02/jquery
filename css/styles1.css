@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./../images/background.jpg') no-repeat center center;
+  background-size: 200% 200%;   /* allow room for movement */
+  animation: backgroundMove 30s linear infinite;
+  overflow: hidden;
+}
+
+/* Background Animation */
+@keyframes backgroundMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass container */
+.glass-container {
+  position: relative;
+  width: 90%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Shiny effect */
+.glass-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(-15deg);
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 20;
+}
+.glass-container:hover::before {
+  left: 120%;
+}
+
+/* Heading */
+.glass-container h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Inputs */
+.input-group input {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+.input-group input::placeholder {
+  color: #ddd;
+}
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Remember / Forgot */
+.remember-forgot label {
+  font-size: 0.9rem;
+}
+.remember-forgot input[type='checkbox'] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Register link */
+.register-link p {
+  color: #eee;
+  font-size: 0.9rem;
+}
+.register-link a {
+  color: #a8d0ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.login-btn {
+  background: #4a90e2;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+.login-btn:hover {
+  background: #357abd;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  body {
+    background-size: 180% 180%;
+    animation-duration: 40s; /* slower on medium screens */
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-size: 220% 220%;
+    animation-duration: 50s; /* slower on tablets */
+  }
+  .glass-container {
+    padding: 25px;
+    border-radius: 15px;
+  }
+  .glass-container h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    background-size: 250% 250%;
+    animation-duration: 60s; /* slowest on mobile */
+  }
+  .glass-container {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .glass-container h2 {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
